@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Buy Tickets | Guides and Attractions of Albania</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Guides and Attractions of Albania</h1>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Guides</a></li>
+				<li><a href="#">Attractions</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">Buy Tickets</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="ticket-section">
+			<h2>Buy Tickets</h2>
+			<form id="ticket-form" action="#">
+				<label for="name">Full Name:</label>
+				<input type="text" id="name" name="name" required>
+
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+
+				<label for="date">Date:</label>
+				<input type="date" id="date" name="date" required>
+
+				<label for="ticket-type">Ticket Type:</label>
+				<select id="ticket-type" name="ticket-type" required>
+					<option value="">-- Select a ticket type --</option>
+					<option value="adult">Adult</option>
+					<option value="child">Child</option>
+				</select>
+
+				<label for="ticket-quantity">Ticket Quantity:</label>
+				<input type="number" id="ticket-quantity" name="ticket-quantity" min="1" required>
+
+				<input type="submit" value="Buy Tickets">
+			</form>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; modex</p>
+	</footer>
+</body>
+</html>
